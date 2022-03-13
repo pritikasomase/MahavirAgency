@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="4">MarksSheet</th>
+        </tr>
+        <tr>
+            <th> Student Name :</th>
+            <td id="name" colspan="3"></td>
+        </tr>
+        <tr>
+            <th> Enrollment Number :</th>
+            <td id="enroll" colspan="3"></td>
+        </tr>
+        <tr>
+            <th>Sr No.</th>
+            <th>Subject Name</th>
+            <th>Marks obtain</th>
+            <th>Out of marks(100)</th>
+
+        </tr>
+
+
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td>HTML</td>
+            <td id="sub1"></td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td>CSS</td>
+            <td id="sub2"></td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td>Bootstrap</td>
+            <td id="sub3"></td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">4</td>
+            <td>JavaScript</td>
+            <td id="sub4"></td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">5</td>
+            <td>React JS</td>
+            <td id="sub5"></td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <th colspan="2" style="text-align: right;"> Total </th>
+            <th id="tot"></th>
+            <th>500</th>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: right;"> Persentage </th>
+            <th id="per" colspan="2"></th>
+        </tr>
+
+    </table>
+
+    <script>
+        let name = prompt("Enter Student Name")
+        let enroll = prompt("enter enrollment number")
+        let m1 = prompt("Enter frist sub marks")
+        let m2 = prompt("Enter second sub marks")
+        let m3 = prompt("Enter third sub marks")
+        let m4 = prompt("Enter fouth sub marks")
+        let m5 = prompt("Enter fifth sub marks")
+        let s1 = Number(m1)
+        let s2 = Number(m2)
+        let s3 = Number(m3)
+        let s4 = Number(m4)
+        let s5 = Number(m5)
+        total = s1 + s2 + s3 + s4 + s5;
+        avg = total / 5;
+        document.getElementById('name').innerHTML = name;
+        document.getElementById('enroll').innerHTML = enroll;
+
+
+        document.getElementById('sub1').innerHTML = s1;
+        document.getElementById('sub2').innerHTML = s2;
+        document.getElementById('sub3').innerHTML = s3;
+        document.getElementById('sub4').innerHTML = s4;
+        document.getElementById('sub5').innerHTML = s5;
+
+        document.getElementById('tot').innerHTML = total;
+        document.getElementById('per').innerHTML = avg;
+ 
+
+    </script>
+
+</body>
+
+</html>
